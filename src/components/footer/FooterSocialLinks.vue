@@ -3,14 +3,13 @@
 
 <template>
     <section id="social-links" class="container d-flex justify-between">
-        <a href="" class="btn text-uppercase container-item">Sign-Up Now!</a>
-        <div class="social-links-container container-item d-flex">
+        <a href="" class="btn text-uppercase d-flex align-center">Sign-Up Now!</a>
+        <div class="social-links-container d-flex align-center">
             <span class="text-uppercase">Follow Us</span>
             <ul class="d-flex">
-                <li>shi</li>
-                <li>shi</li>
-                <li>shi</li>
-                <li>shi</li>
+                <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
             </ul>
         </div>
     </section>
@@ -26,6 +25,6 @@ span {
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 0.3rem 1rem;
 }
 </style>

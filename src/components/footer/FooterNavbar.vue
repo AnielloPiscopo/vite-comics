@@ -7,7 +7,6 @@
             <span>sjbj</span>
         </nav>
         <div class="img-container">
-            <img src="../../assets/img/dc-logo-bg.png" alt="">
         </div>
     </section>
 </template>
@@ -17,9 +16,27 @@
     background-image: url('../../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 25rem;
 
     >* {
         width: 50%;
+    }
+
+    &.container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .img-container {
+        background-image: url('../../assets/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+
+    nav {
+        padding: 1.5rem 0;
     }
 }
 </style>
