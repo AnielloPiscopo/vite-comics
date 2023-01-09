@@ -1,8 +1,53 @@
 <script>
+export default {
+    data() {
+        return {
+            path: 'src/assets/img/buy-',
+
+            navItems: [
+                {
+                    text: 'Digital Comics',
+                    src: `comics-digital-comics.png`
+                },
+
+
+                {
+                    text: 'DC Merchandise',
+                    src: `comics-merchandise.png`
+                },
+
+
+                {
+                    text: 'Subscriptions',
+                    src: `comics-subscriptions.png`
+                },
+
+
+                {
+                    text: 'Comic Shop Locator',
+                    src: `comics-shop-locator.png`
+                },
+
+
+                {
+                    text: 'DC Power Visa',
+                    src: `dc-power-visa.svg`
+                },
+            ]
+        }
+    },
+}
 </script>
 
 <template>
-    <nav class="container"></nav>
+    <nav class="container">
+        <ul class="d-flex justify-between align-center">
+            <li v-for="navItem in navItems" class="d-flex align-center text-uppercase">
+                <img :src="path + navItem.src" :alt="navItem.text">
+                <a href="#">{{ navItem.text }}</a>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <style scoped lang="scss">
@@ -12,5 +57,19 @@
 
 nav {
     background-color: $complementary--color;
+
+    ul {
+        padding: 1.2rem 0;
+
+        img {
+            width: 37px;
+            margin-right: 1rem;
+        }
+
+        li a {
+            font-size: 0.7rem;
+            color: $primary--color;
+        }
+    }
 }
 </style>
