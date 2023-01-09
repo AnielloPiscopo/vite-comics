@@ -53,15 +53,30 @@ export default {
 </template>
 
 <style scoped lang="scss">
-ul li {
-    margin-left: 1rem;
-}
+@use '../../styles/partials/variables' as *;
 
-span {
-    font-weight: bold;
-}
 
-.btn {
-    padding: 0.5rem;
+
+#social-links {
+    background-color: $lighter--secondary--color;
+
+    a {
+        color: $primary--color;
+    }
+
+    ul li {
+        margin-left: 1rem;
+    }
+
+    span {
+        font-weight: bold;
+        color: $complementary--color;
+    }
+
+    .btn {
+        padding: 0.7rem;
+        border: 2px solid $complementary--color;
+        font-size: 0.9rem;
+    }
 }
 </style>

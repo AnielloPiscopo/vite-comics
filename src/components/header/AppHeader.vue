@@ -87,23 +87,39 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.logo-container {
-    width: 60px;
-}
+@use '../../styles/partials/variables' as *;
 
-ul li {
-    margin-right: 2.3rem;
-    font-size: 0.7rem;
-    font-weight: bold;
 
-    &.active {
-        .decoration {
-            height: 0.3rem;
-            width: 100%;
 
-            &.p-absolute {
-                top: 58px;
+header {
+    background-color: $primary--color;
+
+    .logo-container {
+        width: 60px;
+    }
+
+    ul li {
+        &.active {
+            .decoration {
+                height: 0.3rem;
+                width: 60%;
+                background-color: $complementary--color;
+
+                &.p-absolute {
+                    top: 50px;
+                }
             }
+
+            a {
+                color: $complementary--color;
+            }
+        }
+
+        a {
+            margin-right: 2.3rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: $darker--icon--bg-color;
         }
     }
 }

@@ -3,12 +3,16 @@
 
 <template>
     <section id="content" class="container">
-        <h2>--&#62; Content goes here &#60;--</h2>
+        <h3 class="title">--&#62; Content goes here &#60;--</h3>
     </section>
 </template>
 
 <style scoped lang="scss">
-h2 {
-    padding: 0.7rem 0;
+@use '../../styles/partials/variables' as *;
+
+
+
+.title {
+    padding: 1.2rem 0;
 }
 </style>

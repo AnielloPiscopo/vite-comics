@@ -33,4 +33,10 @@ export default {
 <style lang="scss">
 @use './styles/general.scss' as *;
 @use './styles/partials/variables' as *;
+
+
+body {
+  color: $primary--color;
+  background-color: $secondary--color;
+}
 </style>

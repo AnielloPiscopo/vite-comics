@@ -61,7 +61,7 @@ export default {
     <section id="navbar-container" class="container d-flex">
         <nav class="d-flex wrap column">
             <div class="nav-item" v-for="navSection in navSections">
-                <h3 class="text-uppercase">{{ navSection.title }}</h3>
+                <span class="text-uppercase title">{{ navSection.title }}</span>
                 <ul>
                     <li v-for="navItem in navSection.navItems"><a href="#" :alt="navItem">{{ navItem }}</a></li>
                 </ul>
@@ -74,6 +74,11 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../../styles/partials/variables' as *;
+
+
+
+
 #navbar-container {
     background-image: url('../../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
@@ -103,13 +108,21 @@ export default {
         .nav-item {
             margin: 1rem 0;
 
-            h3 {
-                padding-bottom: 0.7rem;
+            .title {
+                font-weight: bold;
             }
 
             li {
                 font-size: 0.7rem;
                 padding-bottom: 0.2rem;
+
+                &:first-of-type {
+                    padding-top: 0.7rem;
+                }
+
+                a {
+                    color: $icon--bg-color;
+                }
             }
         }
     }
