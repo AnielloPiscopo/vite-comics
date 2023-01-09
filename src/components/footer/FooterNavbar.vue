@@ -78,7 +78,7 @@ export default {
     background-image: url('../../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
+    height: 23rem;
 
     >* {
         width: 50%;
