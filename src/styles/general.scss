@@ -17,3 +17,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+// * TAG HTML
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+// * CLASSI
+.d-flex {
+    display: flex;
+}
+
+.d-flex.justify-center {
+    justify-content: center;
+}
+
+.d-flex.justify-between {
+    justify-content: space-between;
+}
+
+.d-flex.align-center {
+    align-items: center;
+}
+
+.container {
+    padding: 2rem 15rem;
+}
