@@ -4,6 +4,15 @@
     background-color: aqua;
 }
 
+footer * {
+    color: white;
+    background-color: red;
+}
+
+.btn {
+    border: 2px solid orange;
+}
+
 
 
 
@@ -29,6 +38,7 @@
 // * TAG HTML
 body {
     font-family: sans-serif;
+    margin: 0.7rem 0;
 }
 
 img {
@@ -68,10 +78,18 @@ a {
     padding: 1.5rem 15rem;
 }
 
+.container .container-item {
+    padding: 1.5rem 0;
+}
+
 .p-relative {
     position: relative;
 }
 
 .p-absolute {
     position: absolute;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }

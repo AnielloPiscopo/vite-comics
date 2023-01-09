@@ -30,7 +30,7 @@
 
 <style scoped lang="scss">
 .logo-container {
-    width: 7%;
+    width: 60px;
 }
 
 ul li {
