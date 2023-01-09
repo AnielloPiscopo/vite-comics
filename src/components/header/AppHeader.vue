@@ -76,8 +76,9 @@ export default {
             </div>
 
             <ul class="d-flex">
-                <li class="p-relative text-uppercase" v-for="navItem in navItems">
-                    <a :href="`${navItem.url}`">{{ navItem.text }}</a>
+                <li class="p-relative text-uppercase" :class="(navItem.active) ? 'active' : ''"
+                    v-for="navItem in navItems">
+                    <a :href="(navItem.url)">{{ navItem.text }}</a>
                     <div class="decoration p-absolute"></div>
                 </li>
             </ul>
@@ -101,7 +102,7 @@ ul li {
             width: 100%;
 
             &.p-absolute {
-                top: 67px;
+                top: 58px;
             }
         }
     }
