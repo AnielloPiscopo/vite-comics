@@ -3,7 +3,7 @@
 
 <template>
     <section id="content" class="container">
-        <h2 class="container-item">Content goes here</h2>
+        <h2 class="container-item">--&#62; Content goes here &#60;--</h2>
     </section>
 </template>
 
