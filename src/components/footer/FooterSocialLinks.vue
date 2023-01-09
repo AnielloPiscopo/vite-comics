@@ -1,4 +1,41 @@
 <script>
+export default {
+    data() {
+        return {
+            path: 'src/assets/img/footer-',
+            socialLinks: [
+                {
+                    url: 'facebook',
+                    description: 'Facebook',
+                },
+
+
+                {
+                    url: 'twitter',
+                    description: 'Twitter',
+                },
+
+
+                {
+                    url: 'youtube',
+                    description: 'Youtube',
+                },
+
+
+                {
+                    url: 'pinterest',
+                    description: 'Pinterest',
+                },
+
+
+                {
+                    url: 'periscope',
+                    description: 'Google Maps',
+                },
+            ]
+        }
+    }
+}
 </script>
 
 <template>
@@ -7,9 +44,8 @@
         <div class="social-links-container d-flex align-center">
             <span class="text-uppercase">Follow Us</span>
             <ul class="d-flex">
-                <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
+                <li v-for="socialLink in socialLinks"><a href="#"><img :src="path + socialLink.url + '.png'" alt=""></a>
+                </li>
             </ul>
         </div>
     </section>
@@ -17,7 +53,7 @@
 
 <style scoped lang="scss">
 ul li {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 span {
