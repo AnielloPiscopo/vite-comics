@@ -74,6 +74,14 @@ a {
     align-items: center;
 }
 
+.d-flex.wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex.column {
+    flex-direction: column;
+}
+
 .container {
     padding: 1.5rem 15rem;
 }
