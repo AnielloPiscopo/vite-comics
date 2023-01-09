@@ -1,4 +1,71 @@
 <script>
+export default {
+    data() {
+        return {
+            navItems: [
+                {
+                    text: 'Characters',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'Comics',
+                    url: '#',
+                    active: true,
+                },
+
+                {
+                    text: 'Movies',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'TV',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'Games',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'Collectibles',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'Videos',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'Fans',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'News',
+                    url: '#',
+                    active: false,
+                },
+
+                {
+                    text: 'Shop',
+                    url: '#',
+                    active: false,
+                },
+            ]
+        }
+    }
+}
 </script>
 
 <template>
@@ -9,18 +76,8 @@
             </div>
 
             <ul class="d-flex">
-                <li class="p-relative">
-                    <a href="#">sha</a>
-                    <div class="decoration p-absolute"></div>
-                </li>
-
-                <li class="p-relative active">
-                    <a href="#">sha</a>
-                    <div class="decoration p-absolute"></div>
-                </li>
-
-                <li class="p-relative">
-                    <a href="#">sha</a>
+                <li class="p-relative text-uppercase" v-for="navItem in navItems">
+                    <a :href="`${navItem.url}`">{{ navItem.text }}</a>
                     <div class="decoration p-absolute"></div>
                 </li>
             </ul>
@@ -35,6 +92,8 @@
 
 ul li {
     margin-right: 2.3rem;
+    font-size: 0.7rem;
+    font-weight: bold;
 
     &.active {
         .decoration {
