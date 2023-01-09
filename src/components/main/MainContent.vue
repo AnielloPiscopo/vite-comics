@@ -8,5 +8,8 @@
 </template>
 
 <style scoped lang="scss">
-
+#content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 </style>

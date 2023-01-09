@@ -29,6 +29,10 @@
 </template>
 
 <style scoped lang="scss">
+.logo-container {
+    width: 7%;
+}
+
 ul li {
     margin-right: 2.3rem;
 
@@ -38,7 +42,7 @@ ul li {
             width: 100%;
 
             &.p-absolute {
-                top: 55px;
+                top: 67px;
             }
         }
     }
