@@ -2,7 +2,9 @@
 </script>
 
 <template>
-    <header></header>
+    <header>
+
+    </header>
 </template>
 
 <style scoped lang="scss">
