@@ -122,6 +122,10 @@ export default {
 
                 a {
                     color: $icon--bg-color;
+
+                    &:hover {
+                        color: $primary--color;
+                    }
                 }
             }
         }

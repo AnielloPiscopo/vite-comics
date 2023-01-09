@@ -66,6 +66,10 @@ export default {
 
     ul li {
         margin-left: 1rem;
+
+        a:hover {
+            filter: brightness(2);
+        }
     }
 
     span {

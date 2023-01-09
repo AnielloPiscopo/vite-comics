@@ -120,6 +120,10 @@ header {
             font-size: 0.7rem;
             font-weight: bold;
             color: $darker--icon--bg-color;
+
+            &:hover {
+                color: $secondary--color;
+            }
         }
     }
 }
