@@ -72,13 +72,13 @@ export default {
     <header>
         <nav class="d-flex justify-between align-center container">
             <div class="logo-container">
-                <img src="../../assets/img/dc-logo.png" alt="">
+                <img src="../../assets/img/dc-logo.png" alt="logo" title="logo">
             </div>
 
             <ul class="d-flex">
                 <li class="p-relative text-uppercase" :class="(navItem.active) ? 'active' : ''"
                     v-for="navItem in navItems">
-                    <a :href="(navItem.url)">{{ navItem.text }}</a>
+                    <a :href="(navItem.url)" :alt="navItem.text">{{ navItem.text }}</a>
                     <div class="decoration p-absolute"></div>
                 </li>
             </ul>

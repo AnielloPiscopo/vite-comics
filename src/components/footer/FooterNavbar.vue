@@ -63,7 +63,7 @@ export default {
             <div class="nav-item" v-for="navSection in navSections">
                 <h3 class="text-uppercase">{{ navSection.title }}</h3>
                 <ul>
-                    <li v-for="navItem in navSection.navItems"><a href="#">{{ navItem }}</a></li>
+                    <li v-for="navItem in navSection.navItems"><a href="#" :alt="navItem">{{ navItem }}</a></li>
                 </ul>
             </div>
         </nav>

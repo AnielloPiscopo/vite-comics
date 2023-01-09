@@ -44,7 +44,8 @@ export default {
         <div class="social-links-container d-flex align-center">
             <span class="text-uppercase">Follow Us</span>
             <ul class="d-flex">
-                <li v-for="socialLink in socialLinks"><a href="#"><img :src="path + socialLink.url + '.png'" alt=""></a>
+                <li v-for="socialLink in socialLinks"><a href="#"><img :src="path + socialLink.url + '.png'"
+                            :alt="socialLink.description + '\'s icon'" :title="socialLink.description + '\'s icon'"></a>
                 </li>
             </ul>
         </div>
