@@ -1,6 +1,8 @@
 
 <script>
 export default {
+    name: 'SingleComic',
+
     props: {
         thumb: String,
         price: Number,
@@ -37,6 +39,10 @@ export default {
 
     .img-container {
         margin-bottom: 1rem;
+    }
+
+    &:hover img {
+        filter: contrast(1.5)
     }
 }
 </style>
