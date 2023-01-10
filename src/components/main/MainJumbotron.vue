@@ -1,11 +1,11 @@
 <script>
 export default {
-    name: 'MainContent',
+    name: 'MainJumbotron',
 }
 </script>
 
 <template>
-    <section id="content" class="container">
+    <section id="jumbotron" class="container">
         <h3 class="title">--&#62; Content goes here &#60;--</h3>
     </section>
 </template>
@@ -15,7 +15,7 @@ export default {
 
 
 
-#content {
+#jumbotron {
     background-color: $secondary--color;
 
     .title {

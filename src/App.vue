@@ -1,6 +1,6 @@
 <script>
 import AppHeader from './components/header/AppHeader.vue';
-import MainContent from './components/main/MainContent.vue';
+import MainJumbotron from './components/main/MainJumbotron.vue';
 import MainNavbar from './components/main/MainNavbar.vue';
 import FooterNavbar from './components/footer/FooterNavbar.vue';
 import FooterSocialLinks from './components/footer/FooterSocialLinks.vue';
@@ -10,7 +10,7 @@ import FooterSocialLinks from './components/footer/FooterSocialLinks.vue';
 export default {
   components: {
     AppHeader,
-    MainContent,
+    MainJumbotron,
     MainNavbar,
     FooterNavbar,
     FooterSocialLinks,
@@ -23,7 +23,7 @@ export default {
 
 
   <main>
-    <MainContent />
+    <MainJumbotron />
     <MainNavbar />
   </main>
 
