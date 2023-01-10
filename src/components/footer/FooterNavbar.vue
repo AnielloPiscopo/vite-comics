@@ -1,5 +1,7 @@
 <script>
 export default {
+    name: 'FooterNavbar',
+
     data() {
         return {
             navSections: [

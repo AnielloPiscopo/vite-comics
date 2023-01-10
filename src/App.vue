@@ -20,10 +20,14 @@ export default {
 
 <template>
   <AppHeader />
+
+
   <main>
     <MainContent />
     <MainNavbar />
   </main>
+
+
   <footer>
     <FooterNavbar />
     <FooterSocialLinks />
@@ -37,6 +41,5 @@ export default {
 
 body {
   color: $primary--color;
-  background-color: $secondary--color;
 }
 </style>

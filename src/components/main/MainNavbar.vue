@@ -1,9 +1,9 @@
 <script>
 export default {
+    name: 'MainNavbar',
+
     data() {
         return {
-            path: 'src/assets/img/buy-',
-
             navItems: [
                 {
                     text: 'Digital Comics',
@@ -36,14 +36,20 @@ export default {
             ]
         }
     },
+
+    methods: {
+        getImgPath(imgPath) {
+            return new URL('../../assets/img/buy-' + imgPath, import.meta.url).href
+        }
+    }
 }
 </script>
 
 <template>
     <nav class="container">
-        <ul class="d-flex justify-between align-center">
+        <ul class="d-flex justify-around align-center">
             <li v-for="navItem in navItems" class="d-flex align-center text-uppercase">
-                <img :src="path + navItem.src" :alt="navItem.text">
+                <img :src="getImgPath(navItem.src)" :alt="navItem.text">
                 <a href="#">{{ navItem.text }}</a>
             </li>
         </ul>

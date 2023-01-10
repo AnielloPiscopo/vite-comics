@@ -1,4 +1,7 @@
 <script>
+export default {
+    name: 'MainContent',
+}
 </script>
 
 <template>
@@ -12,7 +15,11 @@
 
 
 
-.title {
-    padding: 1.2rem 0;
+#content {
+    background-color: $secondary--color;
+
+    .title {
+        padding: 1.2rem 0;
+    }
 }
 </style>

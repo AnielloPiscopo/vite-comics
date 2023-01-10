@@ -1,5 +1,7 @@
 <script>
 export default {
+    name: 'AppHeader',
+
     data() {
         return {
             navItems: [
@@ -70,19 +72,20 @@ export default {
 
 <template>
     <header>
-        <nav class="d-flex justify-between align-center container">
-            <div class="logo-container">
-                <img src="../../assets/img/dc-logo.png" alt="logo" title="logo">
-            </div>
+        <div class="container">
+            <nav class="d-flex justify-between align-center">
+                <div class="logo-container">
+                    <img src="../../assets/img/dc-logo.png" alt="logo" title="logo">
+                </div>
 
-            <ul class="d-flex">
-                <li class="p-relative text-uppercase" :class="(navItem.active) ? 'active' : ''"
-                    v-for="navItem in navItems">
-                    <a :href="(navItem.url)" :alt="navItem.text">{{ navItem.text }}</a>
-                    <div class="decoration p-absolute"></div>
-                </li>
-            </ul>
-        </nav>
+                <ul class="d-flex">
+                    <li class="text-uppercase d-flex" :class="(navItem.active) ? 'active' : ''"
+                        v-for="navItem in navItems">
+                        <a :href="(navItem.url)" :alt="navItem.text">{{ navItem.text }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 </template>
 
@@ -94,35 +97,42 @@ export default {
 header {
     background-color: $primary--color;
 
-    .logo-container {
-        width: 60px;
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
-    ul li {
-        &.active {
-            .decoration {
-                height: 0.3rem;
-                width: 60%;
-                background-color: $complementary--color;
+    nav {
+        height: 100px;
 
-                &.p-absolute {
-                    top: 50px;
-                }
-            }
-
-            a {
-                color: $complementary--color;
-            }
+        .logo-container {
+            width: 60px;
         }
 
-        a {
-            margin-right: 2.3rem;
-            font-size: 0.7rem;
-            font-weight: bold;
-            color: $darker--icon--bg-color;
+        ul {
+            height: 100%;
 
-            &:hover {
-                color: $secondary--color;
+            li {
+                margin-right: 2.3rem;
+                line-height: 100px;
+
+                &.active {
+                    border-bottom: 3px solid $complementary--color;
+
+                    a {
+                        color: $complementary--color;
+                    }
+                }
+
+                a {
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    color: $darker--icon--bg-color;
+
+                    &:hover {
+                        color: $secondary--color;
+                    }
+                }
             }
         }
     }

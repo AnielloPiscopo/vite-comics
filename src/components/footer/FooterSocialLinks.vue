@@ -1,5 +1,7 @@
 <script>
 export default {
+    name: 'FooterSocialLinks',
+
     data() {
         return {
             path: 'src/assets/img/footer-',
@@ -34,6 +36,12 @@ export default {
                 },
             ]
         }
+    },
+
+    methods: {
+        getImgPath(imgPath) {
+            return new URL('../../assets/img/footer-' + imgPath + '.png', import.meta.url).href
+        }
     }
 }
 </script>
@@ -44,7 +52,7 @@ export default {
         <div class="social-links-container d-flex align-center">
             <span class="text-uppercase">Follow Us</span>
             <ul class="d-flex">
-                <li v-for="socialLink in socialLinks"><a href="#"><img :src="path + socialLink.url + '.png'"
+                <li v-for="socialLink in socialLinks"><a href="#"><img :src="getImgPath(socialLink.url)"
                             :alt="socialLink.description + '\'s icon'" :title="socialLink.description + '\'s icon'"></a>
                 </li>
             </ul>
