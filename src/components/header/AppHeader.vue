@@ -74,9 +74,9 @@ export default {
     <header>
         <div class="container">
             <nav class="d-flex justify-between align-center">
-                <div class="logo-container">
+                <a class="logo-container" href="#">
                     <img src="../../assets/img/dc-logo.png" alt="logo" title="logo">
-                </div>
+                </a>
 
                 <ul class="d-flex">
                     <li class="text-uppercase d-flex" :class="(navItem.active) ? 'active' : ''"
