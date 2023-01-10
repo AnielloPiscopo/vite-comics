@@ -23,12 +23,17 @@ export default {
     <section id="jumbotron">
         <div class="background"></div>
 
-        <section id="comics-container" class="container">
-            <h2 class="title text-uppercase btn">Current Series</h2>
-            <SingleComic v-for="comicInfo in json" :thumb="comicInfo.thumb" :price="comicInfo.price"
-                :series="comicInfo.series" :type="json.type" />
+        <section id="comics-container" class="container p-relative">
+            <h2 class="title text-uppercase p-absolute">Current Series</h2>
 
-            <a href="#" class="btn text-uppercase">Load More</a>
+            <div class="comics-container d-flex wrap">
+                <SingleComic v-for="comicInfo in json" :thumb="comicInfo.thumb" :price="comicInfo.price"
+                    :series="comicInfo.series" :type="json.type" />
+            </div>
+
+            <div class="btn-container d-flex justify-center">
+                <a href="#" class="btn text-uppercase">Load More</a>
+            </div>
         </section>
     </section>
 </template>
@@ -48,8 +53,10 @@ export default {
 
 #comics-container {
     background-color: $secondary--color;
+    font-size: 0.7rem;
 
-    .btn {
+    .btn,
+    .title {
         background-color: $complementary--color;
         display: inline-block;
         padding: 0.7rem 0;
@@ -60,10 +67,16 @@ export default {
         }
     }
 
+    .title.p-absolute {
+        bottom: calc(100% - 1.2rem);
+    }
+
     a.btn {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         color: $primary--color;
+        font-weight: bold;
+        margin-top: 1rem;
     }
 }
 </style>

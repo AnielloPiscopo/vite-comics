@@ -65,6 +65,14 @@ a {
     flex-direction: column;
 }
 
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
 .container {
     padding: 1.2rem 15rem;
 }

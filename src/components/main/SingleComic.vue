@@ -12,9 +12,31 @@ export default {
 </script>
 
 <template>
-    <article class="comic">{{ price }}</article>
+    <article class="card">
+        <a href="#">
+            <div class="img-container">
+                <img :src="thumb" :alt="series" :title="series + '\nPrice:' + price">
+            </div>
+            <span class="text-uppercase">{{ series }}</span>
+        </a>
+    </article>
 </template>
 
-<style lang="">
-    
+<style lang="scss">
+@use '../../styles/partials/variables' as *;
+
+
+
+.card {
+    width: calc(100%/6 - 2rem);
+    margin: 1rem;
+
+    a {
+        color: $primary--color;
+    }
+
+    .img-container {
+        margin-bottom: 1rem;
+    }
+}
 </style>
