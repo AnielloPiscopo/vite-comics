@@ -48,9 +48,11 @@ export default {
 <template>
     <nav class="container">
         <ul class="d-flex justify-around align-center">
-            <li v-for="navItem in navItems" class="d-flex align-center text-uppercase">
-                <img :src="getImgPath(navItem.src)" :alt="navItem.text">
-                <a href="#">{{ navItem.text }}</a>
+            <li v-for="navItem in navItems">
+                <a href="#" class="d-flex align-center text-uppercase">
+                    <img :src="getImgPath(navItem.src)" :alt="navItem.text">
+                    <span>{{ navItem.text }}</span>
+                </a>
             </li>
         </ul>
     </nav>
@@ -72,9 +74,15 @@ nav {
             margin-right: 1rem;
         }
 
-        li a {
-            font-size: 0.7rem;
-            color: $primary--color;
+        li {
+            &:hover img {
+                filter: brightness(2);
+            }
+
+            a {
+                font-size: 0.7rem;
+                color: $primary--color;
+            }
         }
     }
 }
