@@ -20,11 +20,15 @@ export default {
 </script>
 
 <template>
-    <section id="jumbotron" class="container">
-        <h3 class="title">--&#62; Content goes here &#60;--</h3>
-        <section id="comics-container">
+    <section id="jumbotron">
+        <div class="background"></div>
+
+        <section id="comics-container" class="container">
+            <h2 class="title text-uppercase btn">Current Series</h2>
             <SingleComic v-for="comicInfo in json" :thumb="comicInfo.thumb" :price="comicInfo.price"
                 :series="comicInfo.series" :type="json.type" />
+
+            <a href="#" class="btn text-uppercase">Load More</a>
         </section>
     </section>
 </template>
@@ -34,11 +38,32 @@ export default {
 
 
 
-#jumbotron {
+
+.background {
+    background-image: url('../../assets/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+#comics-container {
     background-color: $secondary--color;
 
-    .title {
-        padding: 1.2rem 0;
+    .btn {
+        background-color: $complementary--color;
+        display: inline-block;
+        padding: 0.7rem 0;
+
+        &.title {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    a.btn {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        color: $primary--color;
     }
 }
 </style>
