@@ -5,7 +5,7 @@ export default {
 
     props: {
         thumb: String,
-        price: Number,
+        price: String,
         series: String,
         type: String,
     }
