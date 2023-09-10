@@ -1,10 +1,11 @@
 <div align="center">
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
-<br>vite-comics
+<img src="https://img.shields.io/badge/Vite-646CFF.svg?style&logo=Vite&logoColor=white" alt="Vite" width="100" />
+<br>VITE-COMICS
 </h1>
-<h3>◦ HTTPStatus Exception: 429</h3>
-<h3>◦ Developed with the software and tools listed below.</h3>
+<h3>◦ Recreation of the homepage of DC Comics</h3>
+<h3>◦ Developed during the course of Full-Stack Web Developer with Boolean</h3>
+<h3>◦ Link: https://aniellopiscopo.github.io/vite-yu-gi-oh/</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/SVG-FFB13B.svg?style&logo=SVG&logoColor=black" alt="SVG" />
