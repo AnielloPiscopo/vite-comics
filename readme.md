@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/Vite-646CFF.svg?style&logo=Vite&logoColor=white" alt="Vite" width="100" />
 <br>VITE-COMICS
 </h1>
-<h3>◦ Recreation of the homepage of DC Comics</h3>
+<h3>◦ Recreation of the homepage of DC Comics </h3>
 <h3>◦ Developed during the course of Full-Stack Web Developer with Boolean</h3>
 <h3>◦ Link: https://aniellopiscopo.github.io/vite-yu-gi-oh/</h3>
 
