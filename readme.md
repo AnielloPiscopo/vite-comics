@@ -64,10 +64,10 @@ HTTPStatus Exception: 429
 
 | File                                                                                                                         | Summary                   |
 | ---                                                                                                                          | ---                       |
-| [index.html](https://github.com/AnielloPiscopo/vite-comics/blob/main/index.html)                                             | HTTPStatus Exception: 429 |
-| [vite.config.js](https://github.com/AnielloPiscopo/vite-comics/blob/main/vite.config.js)                                     | HTTPStatus Exception: 429 |
-| [App.vue](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\App.vue)                                               | HTTPStatus Exception: 429 |
-| [main.js](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\main.js)                                               | HTTPStatus Exception: 429 |
+| [index.html](https://github.com/AnielloPiscopo/vite-comics/blob/main/index.html)                                             | This is the main HTML entry point for your web application. It's where you define the structure of your HTML document, include CSS and JavaScript files, and specify the root element where the Vue.js application will be mounted. |
+| [vite.config.js](https://github.com/AnielloPiscopo/vite-comics/blob/main/vite.config.js)                                     | This is a configuration file used with Vite, which is a build tool and development server designed for modern web development. |
+| [App.vue](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\App.vue)                                               | This is the base of the work and it serves as the root component of the Vue.js application and contains the overall layout, navigation, and the top-level structure of your app. |
+| [main.js](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\main.js)                                               | This file is the entry point of the application. It's where you create and configure the Vue instance, set up routing (if used), and specify which component to render in the root DOM element. |
 | [FooterNavbar.vue](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\components\footer\FooterNavbar.vue)           | HTTPStatus Exception: 429 |
 | [FooterSocialLinks.vue](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\components\footer\FooterSocialLinks.vue) | HTTPStatus Exception: 429 |
 | [AppHeader.vue](https://github.com/AnielloPiscopo/vite-comics/blob/main/src\components\header\AppHeader.vue)                 | HTTPStatus Exception: 429 |
